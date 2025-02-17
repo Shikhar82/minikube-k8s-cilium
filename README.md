@@ -1,4 +1,5 @@
-# minikube-k8s-cilium
+**Setting Up Minikube with Kubernetes and Cilium CNI**
+
 # Install kubectl
 # Download and Install minikube
 # Configure proxy for docker
