@@ -1,4 +1,4 @@
-#Setting Up Minikube with Kubernetes and Cilium CNI – Ready-to-Use PS Lab#
+# Setting Up Minikube with Kubernetes and Cilium CNI – Ready-to-Use PS Lab #
 
 Install kubectl
 Download and Install minikube
