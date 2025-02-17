@@ -1,6 +1,6 @@
-**Setting Up Minikube with Kubernetes and Cilium CNI**
+# Setting Up Minikube with Kubernetes and Cilium CNI #
 
-# Install kubectl
+**Install kubectl**
 # Download and Install minikube
 # Configure proxy for docker
 # Pulling Required Docker Images for Cilium CNI Installation
