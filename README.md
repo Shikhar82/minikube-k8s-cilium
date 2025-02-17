@@ -18,7 +18,6 @@ This guide provides step-by-step instructions to set up Minikube with Kubernetes
 
 ## Expected Output After System Setup Completion  
 
-```sh
 pslearner@ip-172-31-24-95:~$ status
 
 SYSTEM COMPLETE
@@ -34,15 +33,13 @@ kube-controller-manager-minikube   1/1     Running   1 (14m ago)   16m
 kube-proxy-2z2lp                   1/1     Running   1 (14m ago)   16m
 kube-scheduler-minikube            1/1     Running   1 (14m ago)   16m
 storage-provisioner                1/1     Running   3 (12m ago)   16m
-```
+
 
 To verify Cilium installation:  
 
-```sh
 pslearner@ip-172-31-24-95:~$ kubectl get pods -n kube-system | grep cilium
 cilium-952q2                       1/1     Running   0             14m
 cilium-operator-5775746664-xgx47   1/1     Running   0             14m
-```
+
 
 Your Minikube Kubernetes cluster with Cilium CNI is now successfully set up and ready to use!
-```
