@@ -1,45 +1,22 @@
-```markdown
-# Setting Up Minikube with Kubernetes and Cilium CNI – Ready-to-Use PS Lab  
+# Terrarium
 
-This guide provides step-by-step instructions to set up Minikube with Kubernetes and Cilium CNI for a ready-to-use PS Lab environment.  
+Welcome to Terrarium!
 
-## Installation Steps  
+Read our [patch notes](https://github.com/ps-interactive/labs_terrarium/wiki/Release-Notes) to see the latest changes.
 
-1. Install `kubectl`  
-2. Download and install Minikube  
-3. Configure proxy for Docker  
-4. Pull the required Docker images for Cilium CNI installation  
-5. Pull the Nginx Docker image for creating pods  
-6. Start Minikube  
-7. Download the latest version of Cilium and extract the downloaded file to the `/usr/local/bin` directory  
-8. Enable the Ingress addon  
-9. Upload the Cilium images to the Minikube Kubernetes cluster  
-10. Manually install Cilium  
+If you are contributing to the codebase, please make sure that you're working in the `develop` branch and not committing to `main` without verifying with Aaron or Thomas.
 
-## Expected Output After System Setup Completion  
+If you'd like to suggest some changes or point out a problem, please use our [Issues](https://github.com/ps-interactive/labs_terrarium/issues) to make a ticket.
 
-pslearner@ip-172-31-24-95:~$ status
+Also, this should be a no brainer, but please do not stick any of the code from this repository into any sort of publicly available AI chatbot or machine learning programs (like ChatGPT). If you're struggling with getting things up and running, reach out to us and we'll see if we can get you through whatever issues you have.
 
-SYSTEM COMPLETE
+# Getting Started
+Please check out our [Releases](https://github.com/ps-interactive/labs_terrarium/releases) page to download the latest update.
 
-pslearner@ip-172-31-24-95:~$ kubectl get pods -n kube-system
-NAME                               READY   STATUS    RESTARTS      AGE
-cilium-952q2                       1/1     Running   0             14m
-cilium-operator-5775746664-xgx47   1/1     Running   0             14m
-coredns-5d78c9869d-shbxs           1/1     Running   0             12m
-etcd-minikube                      1/1     Running   1 (14m ago)   16m
-kube-apiserver-minikube            1/1     Running   1 (13m ago)   16m
-kube-controller-manager-minikube   1/1     Running   1 (14m ago)   16m
-kube-proxy-2z2lp                   1/1     Running   1 (14m ago)   16m
-kube-scheduler-minikube            1/1     Running   1 (14m ago)   16m
-storage-provisioner                1/1     Running   3 (12m ago)   16m
+Start with the [Building a Security Lab Environment](https://github.com/ps-interactive/labs_terrarium/wiki/Building-a-Security-Lab-Environment) page of the wiki.
 
+Looking for some software services that have already been tried and tested? Check out the [Supported Services](./supported_services/) folder!
 
-To verify Cilium installation:  
+For brief build instructions check [here.](https://github.com/ps-interactive/labs_terrarium/wiki/Lab-Infrastructure-Creation-Workflow.md)
 
-pslearner@ip-172-31-24-95:~$ kubectl get pods -n kube-system | grep cilium
-cilium-952q2                       1/1     Running   0             14m
-cilium-operator-5775746664-xgx47   1/1     Running   0             14m
-
-
-Your Minikube Kubernetes cluster with Cilium CNI is now successfully set up and ready to use!
+For a great video primer series, check out https://drive.google.com/drive/folders/1MxidU4_igNsHcSMX3lDkorC_Y0RLr1q1?usp=sharing
